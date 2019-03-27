@@ -3,8 +3,18 @@
 
 // Check if being served over dat
 
+const gatedButtons = document.getElementsByClassName("dat-gate")
+const datButtons = Array.from(gatedButtons)
 if (window.DatArchive) {
-  document.body.classList.add('isdat')
+  document.body.classList.add('on-dat')
+  datButtons.map((i)=>{
+    i.disabled = false
+  })
+} else {
+   datButtons.map((i)=>{
+    i.classList.remove('dim')
+    i.classList.remove('pointer')
+  })
 }
 
 // Fork
@@ -46,18 +56,33 @@ createButton.addEventListener('click', createCall)
 
 // Number of peers
 
-const archive = new DatArchive(document.location.origin)
+if (window.DatArchive) {
 
-async function peers () {
-  var info = await archive.getInfo()
-  return info.peers
+  const archive = new DatArchive(document.location.origin)
+
+  async function peers () {
+    var info = await archive.getInfo()
+    return info.peers
+  }
+
+  peers().then((e)=>{
+    document.getElementById('site-peers').innerText = e
+    if (e > 0) {
+      document.getElementById('site-peers-indicator').innerText = '☺'
+    } else {
+      document.getElementById('site-peers-indicator').innerText = '☹'
+    }
+  })
+
+  archive.addEventListener('network-changed', ({peers}) => {
+    document.getElementById('site-peers').innerText = peers
+    if (peers > 0) {
+      document.getElementById('site-peers-indicator').innerText = '☺'
+    } else {
+      document.getElementById('site-peers-indicator').innerText = '☹'
+    }
+  })
+} else {
+  document.getElementById('site-peers-indicator').innerText = 'dat://'
+  document.getElementById('link-protocol').innerText = 'https'
 }
-
-peers().then((e)=>{
-  document.getElementById('site-peers').innerText = e
-})
-
-archive.addEventListener('network-changed', ({peers}) => {
-  document.getElementById('site-peers').innerText = peers
-  console.log(peers, 'current peers')
-})

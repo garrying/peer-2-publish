@@ -10,3 +10,7 @@ body {
 .mw-50 {
   max-width: 49%;
 }
+
+.mh-85vh {
+  max-height: 85vh;
+}

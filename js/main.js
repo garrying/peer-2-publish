@@ -72,6 +72,9 @@ if (window.DatArchive) {
     } else {
       document.getElementById('site-peers-indicator').innerText = '☹'
     }
+    if (e === 1) {
+      document.getElementById('site-peers-indicator-plural').style.display = 'none'
+    }
   })
 
   archive.addEventListener('network-changed', ({peers}) => {
@@ -80,6 +83,9 @@ if (window.DatArchive) {
       document.getElementById('site-peers-indicator').innerText = '☺'
     } else {
       document.getElementById('site-peers-indicator').innerText = '☹'
+    }
+    if (peers === 1) {
+      document.getElementById('site-peers-indicator-plural').style.display = 'none'
     }
   })
 } else {

@@ -14,10 +14,10 @@
 <body class="bg-near-black white sans-serif">
   <main>
     <section class="fixed z-max bottom-2 right-2 white">
-      <a class="ma0 br-pill ph3 pv2 ba no-underline white" href="dat://p2p-toronto.hashbash.io" id="site-peers-indicator"><span id="site-peers"></span> peers <span id="site-peers-indicator"></span></a>
+      <a class="ma0 br-pill ph3 pv2 ba no-underline white" href="dat://p2ptoronto.hashbash.io" id="site-peers-indicator-wrapper"><span id="site-peers"></span> peers <span id="site-peers-indicator"></span></a>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <h1 class="ma0 normal">peer-2-publish</h1>
+      <h1 class="ma0 normal f1">peer-2-publish</h1>
       <div class="absolute bottom-2 left-2 no-underline pa3 white">
         <span id="link-protocol">dat</span>://p2p-toronto.hashbase.io
       </div>
@@ -25,7 +25,24 @@
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
         <img src="./images/dat-protocol.png" class="vh-75-l" alt="screenshot of dat://datproject.org/">
-        <figcaption class="mt3 yellow f5">dat://datproject.org/</figcaption>
+        <figcaption class="mt3 f5"><a class="yellow no-underline" href="dat://datproject.org/">dat://datproject.org/</a></figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <div class="mw8 f2 bl bw1 b--white-10">
+        <blockquote class="mt0" cite="https://www.huxley.net/bnw/four.html">
+          <p>dat is a protocol designed for syncing folders of data, even if they are large or changing constantly. dat uses a cryptographically secure register of changes to prove that the requested data version is distributed.</p>
+          <p>a group of dat clients can connect to each other to form a public or private decentralized network to exchange data between each other.</p>
+          <cite class="f4">– mathias buus madsen, karissa mckelvey, maxwell ogden, code for science, 2017</cite><br />
+          <small class="f5"><a class="yellow no-underline" href="https://github.com/datprotocol/whitepaper/raw/master/dat-paper.pdf">dat - distributed dataset synchronization and versioning</a></small>
+        </blockquote>
+      </div>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <img src="./images/how-dat-works.png" class="vh-75-l" alt="screenshot of datprotocol.github.io/how-dat-works/">
+        <figcaption class="mt3 f5"><a class="yellow no-underline" href="https://datprotocol.github.io/how-dat-works/
+">https://datprotocol.github.io/how-dat-works/</a></figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
@@ -46,7 +63,7 @@ $ dat v13.11.5
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
         <img src="./images/beaker-browser.png" class="vh-75-l" alt="screenshot of dat://beakerbrowser.com/">
-        <figcaption class="mt3 yellow f5">dat://beakerbrowser.com/</figcaption>
+        <figcaption class="mt3 yellow f5"><a href="dat://beakerbrowser.com/" class="yellow no-underline">dat://beakerbrowser.com/</a></figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
@@ -69,163 +86,155 @@ $ dat v13.11.5
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/beaker-browser-site.png" class="vh-75-l" alt="screenshot of beaker browser's site view">
+        <img src="./images/beaker-browser-site.png" class="vh-75-l" alt="screenshot of beaker browser's library view">
         <figcaption class="mt3 yellow f5">sites are editable in browser and can be previewed and published continuously.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/beaker-browser-versions.png" class="vh-75-l" alt="screenshot of beaker browser's site view">
+        <img src="./images/beaker-create.png" class="vh-75-l" alt="screenshot of beaker browser's site edit view">
+        <figcaption class="mt3 yellow f5">make edits in browser or in a separate folder.</figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <img src="./images/beaker-browser-versions.png" class="vh-75-l" alt="screenshot of beaker browser's site version panel">
         <figcaption class="mt3 yellow f5">every edit has a version number that you could revisit.</figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <img src="./images/fritter-demo.gif" class="mw-100" alt="animated gif of fritter in beaker">
+        <figcaption class="mt3 yellow f5">
+          <a href="dat://fritter.hashbase.io" class="yellow no-underline">dat://fritter.hashbase.io</a><br />
+          <small class="yellow">gif via tara vancil, <a class="yellow no-underline" href="https://github.com/beakerbrowser/fritter" target="_blank">beakerbrowser/fritter</a></small>
+        </figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <iframe src="https://player.vimeo.com/video/277285404" width="1100" height="700" allowfullscreen></iframe>
+        <figcaption class="mt3 yellow f5">dat zine walkthrough, zach mandeville—2018.</figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <img src="./images/enoki.png" class="vh-75-l" alt="screenshot of enoki's website">
+        <figcaption class="mt3 yellow f5">enoki, <a class="yellow no-underline" href="dat://enoki.site/">enoki.site</a>, jon-kyle mohr—2017.</figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <iframe src="https://player.vimeo.com/video/277206832" width="1200" height="700" allowfullscreen></iframe>
+        <figcaption class="mt3 yellow f5">archetype, archetype.cc, alejandro matamala ortiz—2018.</figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <img src="./images/olia-lialina-self-portrait-2018.jpg" class="vh-75-l" alt="screenshot lialina's self-portrait">
+        <figcaption class="mt3 yellow f5">self-portrait, <a href="http://olia.lialina.work/" class="yellow no-underline">olia.lialina.work</a>, olia lialina—2018.</figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <img src="./images/renaming-the-web-2.jpg" class="vh-75-l" alt="installation view of renaming the web">
+        <figcaption class="mt3 yellow f5">renaming the web, louise drulhe & raphaël bastide—2018.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <div class="mw8 f1 bl bw1 b--white-10">
         <blockquote class="mt0" cite="https://www.huxley.net/bnw/four.html">
           <p>[micro radio stations] will not reject global medium but will use them as a linking and networking means. by translocal micro medium, even global medium could become polymorphous and diverse (not only in the contents but also in the style to let people encounter).</p>
-          <cite>– tetsuo kogawa, <a class="yellow" href="https://anarchy.translocal.jp/radio/micro/">a micro radio manifesto</a></cite>
-        </blockquote>
-      </div>
-    </section>
-    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <div class="mw8 f2 bl bw1 b--white-10">
-        <blockquote class="mt0" cite="https://www.huxley.net/bnw/four.html">
-          <p>two distinct positions: building networks and using networks</p>
-          <p>both positions rooted in conceptual art (which is rooted in earlier critical artist movements)</p>
-          <p>on and offline practices interconnected</p>
-          <p>network as catalyst</p>
-          <cite>– josephine bosma, <a href="https://www.newmuseum.org/calendar/view/1479/let-s-talk-net-art" class="yellow">let’s talk net art</a>, 2019</cite>
-        </blockquote>
-      </div>
-    </section>
-    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <div class="mw8 f2 bl bw1 b--white-10">
-        <blockquote class="mt0" cite="https://www.huxley.net/bnw/four.html">
-          <p>alternative to pyramidal art structures based on market principles</p>
-          <p>internet based art ≠ web based art - let’s explore *all* the networks</p>
-          <p>critical view of technology and publishing systems in an economic context for students and artists</p>
-          <cite>– raphaël bastide, <a href="https://www.youtube.com/watch?v=t3UYBJmLk2U" class="yellow">radical networks</a>, 2018</cite>
+          <cite class="f3">– tetsuo kogawa, <a class="yellow" href="https://anarchy.translocal.jp/radio/micro/">a micro radio manifesto</a></cite>
         </blockquote>
       </div>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <div class="mw8 f1 bl bw1 b--white-10">
         <blockquote class="mt0" cite="https://www.huxley.net/bnw/four.html">
-          <p>why can’t the places that digital work lands modulate the work itself?</p>
-          <cite>– mathew dryhurst, <a href="http://dismagazine.com/discussion/73345/mathew-dryhurst-data-sagacity-and-site-specificity/" class="yellow">data sagacity and site-specificity</a>, 2015</cite>
+          <p>two distinct positions: building networks and using networks</p>
+          <p>both positions rooted in conceptual art (which is rooted in earlier critical artist movements)</p>
+          <p>on and offline practices interconnected</p>
+          <p>network as catalyst</p>
+          <cite  class="f3">– josephine bosma, <a href="https://www.newmuseum.org/calendar/view/1479/let-s-talk-net-art" class="yellow">let’s talk net art</a>, 2019</cite>
         </blockquote>
       </div>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/summer.gif" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">summer, olia lialina—2013</figcaption>
-        <small class="yellow">gif via jenny odell, <a class="yellow" href="https://medium.com/s/world-wide-wtf/designing-for-the-in-between-hybrids-1990s-net-art-and-a-giant-floating-worm-34be64b872d3" target="_blank">design for the in-between</a></small>
-      </figure>
-    </section>
-    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <figure>
-        <img src="./images/simple-net-art-diagram.png" class="vh-75-l" alt="screenshot of beaker browser's site view">
+        <img src="./images/simple-net-art-diagram.png" class="vh-50-l" alt="simple net art diagram">
         <figcaption class="mt3 yellow f5">the simple net art diagram, m.river & t.whid art associates (mtaa)—1997</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/surfclub-timeline.png" class="vh-75-l" alt="screenshot of beaker browser's site view">
+        <img src="./images/surfclub-timeline.png" class="vh-75-l" alt="timeline of internet artist clubs">
         <figcaption class="mt3 yellow f5">catalog of internet artist clubs, paul slocum—2016.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/printed-web.jpg" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">printed web #1, paul soulellis—2014.</figcaption>
-        <small class="yellow">cc by-sa 4.0</small>
+        <img src="./images/floating-swarm.png" class="vh-75-l" alt="screenshot of floating-swarm.hashbase.io">
+        <figcaption class="mt3 yellow f5">floating swarm, <a href="dat://floating-swarm.hashbase.io/" class="yellow no-underline">floating-swarm.hashbash.io</a>, raphaël bastide—2018.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/olia-lialina-self-portrait-2018.jpg" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">self-portrait, olia.lialina.work, olia lialina—2018.</figcaption>
-      </figure>
-    </section>
-    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <figure>
-        <img src="./images/renaming-the-web-2.jpg" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">renaming the web, louise drulhe & raphaël bastide—2018.</figcaption>
-      </figure>
-    </section>
-    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <figure>
-        <img src="./images/floating-swarm.png" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">floating swarm, floating-swarm.hashbash.io, raphaël bastide—2018.</figcaption>
-      </figure>
-    </section>
-    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <figure>
-        <img src="./images/enoki.png" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">enoki, enoki.site, jon-kyle mohr—2017.</figcaption>
-      </figure>
-    </section>
-    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <figure>
-        <iframe src="https://player.vimeo.com/video/277206832" width="1200" height="700" frameborder="0" allowfullscreen></iframe>
-        <figcaption class="mt3 yellow f5">archetype, archetype.cc, alejandro matamala ortiz—2018.</figcaption>
-      </figure>
-    </section>
-    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <figure>
-        <iframe src="https://player.vimeo.com/video/277285404" width="1100" height="700" frameborder="0" allowfullscreen></iframe>
-        <figcaption class="mt3 yellow f5">dat zine walkthrough, zach mandeville—2018.</figcaption>
-      </figure>
-    </section>
-    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
-      <figure>
-        <img src="./images/p2p2p2p-2.jpg" class="vh-75-l" alt="screenshot of beaker browser's site view">
+        <img src="./images/p2p2p2p-2.jpg" class="vh-75-l" alt="image of a crab with p2p2p2p in white">
         <figcaption class="mt3 yellow f5">p2p2p2p workshop, decentralized web summit, laurel schwulst & kyle mock—2018.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/p2p2p-2.png" class="vh-75-l" alt="screenshot of beaker browser's site view">
+        <img src="./images/p2p2p-2.png" class="vh-75-l" alt="screenshot garry's beaker site">
         <figcaption class="mt3 yellow f5">p2p2p2p workshop, decentralized web summit, laurel schwulst & kyle mock—2018.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/ascii-town.gif" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">ascii town, ascii.designforthe.net, mindy seu–2017.</figcaption>
+        <img src="./images/ascii-town.gif" class="vh-75-l" alt="animated gif of ascii town">
+        <figcaption class="mt3 yellow f5">ascii town, <a class="yellow no-underline" href="http://ascii.designforthe.net/">ascii.designforthe.net, mindy seu–2017</a>.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/a-b-z-2018.png" class="vh-75-l" alt="screenshot of beaker browser's site view">
+        <img src="./images/a-b-z-2018.png" class="vh-75-l" alt="photograph from a-b-z 2018">
+        <figcaption class="mt3 yellow f5">local area network, <a href="dat://local-area-network.hashbase.io/a-b-z-txt/" class="yellow no-underline">local-area-network.hashbase.io</a>, mindy seu, jürg lehni & jon gacnik—2018.</figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <img src="./images/a-b-z-2018-2.png" class="vh-75-l" alt="screenshot of local area network from a-b-z">
         <figcaption class="mt3 yellow f5">local area network, local-area-network.hashbase.io, mindy seu, jürg lehni & jon gacnik—2018.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/a-b-z-2018-2.png" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">local area network, local-area-network.hashbase.io, mindy seu, jürg lehni & jon gacnik—2018.</figcaption>
+        <img src="./images/a-b-z-2018-3.jpg" class="mw-100 vh-75-l" alt="photograph from a-b-z 2018">
+        <figcaption class="mt3 yellow f5">local area network, <a href="dat://local-area-network.hashbase.io/a-b-z-txt/" class="yellow no-underline">local-area-network.hashbase.io</a>, mindy seu, jürg lehni & jon gacnik—2018.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/a-b-z-2018-3.jpg" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">local area network, local-area-network.hashbase.io, mindy seu, jürg lehni & jon gacnik—2018.</figcaption>
+        <img src="./images/printed-web.jpg" class="mw-100" alt="photograph of printed web #1">
+        <figcaption class="mt3 yellow f5">
+          printed web #1, paul soulellis—2014.<br />
+          <small class="yellow">cc by-sa 4.0</small>
+        </figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/www-4.jpg" class="vh-50-l" alt="screenshot of beaker browser's site view">
-        <img src="./images/www-2.jpg" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">wwworkshop, collection of collections, wwworkshop.org, 2018.</figcaption>
+        <img src="./images/www-4.jpg" class="dib v-mid mw-50" alt="photograph of the wwworkshop">
+        <img src="./images/www-2.jpg" class="dib v-mid mw-50" alt="photograph of the wwworkshop">
+        <figcaption class="mt3 yellow f5">wwworkshop, collection of collections, <a href="https://wwworkshop.org" class="yellow no-underline">wwworkshop.org</a>, 2018.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
       <figure>
-        <img src="./images/www-1.jpg" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <img src="./images/www-3.jpg" class="vh-75-l" alt="screenshot of beaker browser's site view">
-        <figcaption class="mt3 yellow f5">wwworkshop, collection of collections, wwworkshop.org, 2018.</figcaption>
+        <img src="./images/www-1.jpg" class="dib v-mid mw-50" alt="photograph of the wwworkshop">
+        <img src="./images/www-3.jpg" class="dib v-mid mw-50" alt="photograph of the wwworkshop">
+        <figcaption class="mt3 yellow f5">wwworkshop, collection of collections, <a href="https://wwworkshop.org" class="yellow no-underline">wwworkshop.org</a>, 2018.</figcaption>
       </figure>
     </section>
     <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
@@ -237,6 +246,34 @@ $ dat v13.11.5
           <p>matte black makeup that expands on drag</p>
           <p>recorded memories in the cities that are rigid through speed</p>
           <p>yellow band posters you could listen and type </p>
+          <cite class="f3">– wwworkshop, 2018</cite>
+        </blockquote>
+      </div>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <figure>
+        <img src="./images/summer.gif" class="mw-100" alt="animated gif of lialina's summer">
+        <figcaption class="mt3 yellow f5">
+          summer, olia lialina—2013<br />
+          <small class="yellow">gif via jenny odell, <a class="yellow" href="https://medium.com/s/world-wide-wtf/designing-for-the-in-between-hybrids-1990s-net-art-and-a-giant-floating-worm-34be64b872d3" target="_blank">design for the in-between</a></small>
+        </figcaption>
+      </figure>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <div class="mw8 f1 bl bw1 b--white-10">
+        <blockquote class="mt0" cite="https://www.huxley.net/bnw/four.html">
+          <p>why can’t the places that digital work lands modulate the work itself?</p>
+          <cite  class="f3">– mathew dryhurst, <a href="http://dismagazine.com/discussion/73345/mathew-dryhurst-data-sagacity-and-site-specificity/" class="yellow">data sagacity and site-specificity</a>, 2015</cite>
+        </blockquote>
+      </div>
+    </section>
+    <section class="w-100 vh-100 relative flex items-center justify-center bb b--white-10">
+      <div class="mw8 f1 bl bw1 b--white-10">
+        <blockquote class="mt0" cite="https://www.huxley.net/bnw/four.html">
+          <p>alternative to pyramidal art structures based on market principles</p>
+          <p>internet based art ≠ web based art - let’s explore *all* the networks</p>
+          <p>critical view of technology and publishing systems in an economic context for students and artists</p>
+          <cite class="f3">– raphaël bastide, <a href="https://www.youtube.com/watch?v=t3UYBJmLk2U" class="yellow">radical networks</a>, 2018</cite>
         </blockquote>
       </div>
     </section>
@@ -259,11 +296,11 @@ $ dat v13.11.5
       </button>
       <small class="mb5">try something new</small>
 
-      <a class="white no-underline mb3 f3" href="https://p2p-toronto.hashbase.io">
-        https://p2p-toronto.hashbase.io
+      <a class="white no-underline mb3 f2" href="https://p2ptoronto.hashbase.io">
+        https://p2ptoronto.hashbase.io
       </a>
-      <a class="white no-underline f3" href="dat://p2p-toronto.hashbase.io">
-        dat://p2p-toronto.hashbase.io
+      <a class="white no-underline f2" href="dat://p2ptoronto.hashbase.io">
+        dat://p2ptoronto.hashbase.io
       </a>
       <footer class="absolute bottom-2">
         <p><a class="white no-underline" target="_blank" href="https://twitter.com/garrying">@garrying</a>, 2019</p>

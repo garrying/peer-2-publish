@@ -6,3 +6,7 @@ body {
 #site-peers-indicator {
   font-family: Helvetica, Arial, Sans-serif;
 }
+
+.mw-50 {
+  max-width: 49%;
+}

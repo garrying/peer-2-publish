@@ -83,6 +83,6 @@ if (window.DatArchive) {
     }
   })
 } else {
-  document.getElementById('site-peers-indicator').innerText = 'dat://'
+  document.getElementById('site-peers-indicator-wrapper').innerText = 'dat://'
   document.getElementById('link-protocol').innerText = 'https'
 }

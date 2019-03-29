@@ -1,4 +1,4 @@
-# peer-2-print
+# peer-2-publish
 
 - dat://p2ptoronto.hashbase.io
 - https://p2ptoronto.hashbase.io
